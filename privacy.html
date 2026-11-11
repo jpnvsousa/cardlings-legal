@@ -19,12 +19,12 @@
 <body>
 <main>
 <h1 id="privacy-policy-for-cardlings">Privacy Policy for Cardlings</h1>
-<p>Effective date: October 23, 2026. Policy version 1.1.</p>
+<p>Effective date: November 11, 2026. Policy version 1.2.</p>
 <p>This policy covers the mobile game <strong>Cardlings</strong> (Android package <code>com.aurecas.categorysort</code>) for Android and iOS, published by <strong>Aurecas</strong> (Brazil). You can reach us at <a href="mailto:joey@blury.studio">joey@blury.studio</a>.</p>
 <h2 id="in-short">In short</h2>
 <ul>
 <li>You play without an account, an e-mail or a password. On first launch the game creates a random anonymous id so your progress can be saved in the cloud and shown in rankings.</li>
-<li>The game shows ads through AppLovin MAX and the ad networks it works with, and measures itself with Google Analytics for Firebase, Firebase Crashlytics and Meta's App Events. Those services receive device identifiers, ad and app interactions, purchase events, crash reports and an approximate location derived from your IP address.</li>
+<li>The game shows ads through AppLovin MAX and the ad networks it works with, and measures itself with Google Analytics for Firebase, Firebase Crashlytics, Meta's App Events and, on iPhone and iPad, Apple's attribution of our own App Store ads. Those services receive device identifiers, ad and app interactions, purchase events, crash reports and an approximate location derived from your IP address.</li>
 <li>Purchases are handled by the App Store or Google Play. We never see your card.</li>
 <li>We do not sell your data, we do not collect your name, e-mail, phone number, contacts, photos or precise location, and the game is not directed to children under 13.</li>
 <li>You can delete your save, your ranking row and your anonymous account from inside the game: <strong>Settings → Delete my data</strong> (see <a href="#how-to-delete-your-data">How to delete your data</a>).</li>
@@ -52,8 +52,9 @@
 <p>Purpose: showing ads, measuring them, preventing fraud, and, with your consent, personalising them.</p>
 <p>Your choices: in the European Economic Area, the United Kingdom and Switzerland the game asks for your consent with Google's consent form before any ad is requested; you can change your answer at any time in <strong>Settings → Manage privacy</strong>. On iOS the system asks whether the game may track you; if you decline, ads are not personalised with your identifier. On both platforms you can reset or delete the advertising identifier and turn off ad personalisation in the device settings. Without consent or permission you still see ads, but non-personalised ones.</p>
 <p>More: the privacy policies of each network are listed under <a href="#third-party-policies">Third-party policies</a>.</p>
-<h3 id="3-advertising-measurement-meta-app-events">3. Advertising measurement (Meta App Events)</h3>
+<h3 id="3-advertising-measurement-meta-app-events-and-apple-ads">3. Advertising measurement (Meta App Events and Apple Ads)</h3>
 <p>To measure and improve our own advertising on Meta's services, the game sends Meta Platforms a short list of events: that the app was installed and opened, that the tutorial and a few milestone levels were completed, the revenue of the ads shown, and purchases (product id, price and currency, never payment details). Each event carries the advertising identifier when the device allows it, and device information (model, OS version, language). Nothing is sent to Meta before you answer the consent form where one is shown, and nothing after a refusal.</p>
+<p>On iPhone and iPad, to learn which of our own Apple Ads (the ads Apple shows in the App Store) brought an install, the game asks Apple once per installation through Apple's AdServices framework: the system creates a token for the installation, the game sends it to Apple, and Apple answers whether the install followed a tap on or a view of one of our ads and, if it did, which campaign, ad group, keyword and ad, with the date and the campaign's country. The game sends Apple no advertising identifier for this, and the lookup does not depend on the tracking permission. We keep Apple's answer with the analytics data of section 4, for the same time. As with Meta, nothing is asked before you answer the consent form where one is shown, and nothing after a refusal.</p>
 <h3 id="4-analytics-google-analytics-for-firebase">4. Analytics (Google Analytics for Firebase)</h3>
 <p>To understand how the game is played and to balance its levels and economy we record events such as level start and completion, moves used, boosters, popups shown, offers viewed and purchases (product id and price, never payment details). Each event carries an app-instance id created by the SDK, the random account id of section 1 (the player id your profile shows), your device model, OS version and language, an approximate location derived from your IP address, and the advertising identifier when the device allows it. Purpose: analytics and product decisions. Google keeps this data for at most 14 months, then deletes it. The game also reads its settings from Firebase Remote Config, which identifies the installation by a random id.</p>
 <h3 id="5-crash-reports-firebase-crashlytics">5. Crash reports (Firebase Crashlytics)</h3>
@@ -69,13 +70,14 @@
 <h2 id="legal-bases-eea-and-uk">Legal bases (EEA and UK)</h2>
 <ul>
 <li><strong>Performance of a contract</strong>: the anonymous account, the cloud save, rankings and purchases.</li>
-<li><strong>Consent</strong>: personalised advertising and the advertising measurement events sent to Meta in the regions where the consent form is shown, tracking on iOS, and push notifications. You can withdraw it at any time as described above; withdrawing does not affect processing before that.</li>
+<li><strong>Consent</strong>: personalised advertising and the advertising measurement of section 3 (the events sent to Meta and the Apple Ads lookup) in the regions where the consent form is shown, tracking on iOS, and push notifications. You can withdraw it at any time as described above; withdrawing does not affect processing before that.</li>
 <li><strong>Legitimate interests</strong>: analytics, crash reports, fraud prevention and the security of the service, balanced against your interests by keeping the data pseudonymous and minimal.</li>
 </ul>
 <h2 id="who-receives-data">Who receives data</h2>
 <ul>
 <li><strong>AppLovin Corporation</strong> and the ad networks it mediates (<strong>Google</strong>, <strong>Meta</strong>, <strong>Unity</strong>, which runs Unity Ads and ironSource, <strong>Liftoff</strong>, <strong>Mintegral</strong> and <strong>Moloco</strong>), for advertising, as described in section 2.</li>
 <li><strong>Meta Platforms</strong>, for the advertising measurement events of section 3.</li>
+<li><strong>Apple Inc.</strong>, which receives the installation's attribution token and answers with the Apple Ads record of section 3 (iPhone and iPad).</li>
 <li><strong>Google LLC</strong> (Google Analytics for Firebase, Crashlytics, Remote Config, Cloud Messaging) as described above (<a href="https://policies.google.com/privacy">Google privacy policy</a>, <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>).</li>
 <li><strong>Google LLC</strong> (Firebase Authentication and Cloud Firestore), as the processor hosting our servers.</li>
 <li><strong>Apple Inc.</strong> and <strong>Google LLC</strong> as the stores that process your purchases.</li>
@@ -90,7 +92,7 @@
 <li><strong>Save, ranking row and anonymous account</strong>: until you delete them (next section). Copies in server backups expire within 30 days.</li>
 <li><strong>Your entry in an event room other players joined</strong>: until that event ends, 30 days at most.</li>
 <li><strong>Crash reports</strong>: 90 days at Google.</li>
-<li><strong>Analytics events</strong>: at most 14 months at Google.</li>
+<li><strong>Analytics events</strong>, Apple's answer of section 3 included: at most 14 months at Google.</li>
 <li><strong>Advertising data</strong>: under the retention policies of AppLovin, of each ad network and of Meta.</li>
 <li><strong>Purchase records</strong>: with your save, and at the store under its own rules.</li>
 <li><strong>Data on your device</strong>: until you delete your data or uninstall.</li>
